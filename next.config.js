@@ -1,3 +1,2 @@
-module.exports = {
-  reactStrictMode: true,
-}
+const withTM = require('next-transpile-modules')(['drei', 'three']);
+module.exports = withTM({ reactStrictMode: true });
