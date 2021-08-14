@@ -1,36 +1,124 @@
-import { useRef, useState, useMemo, useEffect, Suspense } from 'react';
-import { Canvas, useFrame, useLoader } from 'react-three-fiber';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import AsciiEffect from 'three/examples/jsm/effects/AsciiEffect';
-import { Effects, OrbitControls } from '@react-three/drei';
-
-const MyBox = ({ url }) => {
-  const mesh = useRef();
-  const gltf = useLoader(GLTFLoader, url);
+import { useEffect } from 'react';
+import styled from 'styled-components';
+import * as THREE from 'three';
+import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect';
+import GLTFLoader from 'three-gltf-loader';
+import useAnimationFrame from '../Hooks/useAnimationFrame';
+const Container = styled.div`
+  height: 100%;
+`;
+export default function Face({ aboutOpen }) {
+  let requestID,
+    el,
+    scene,
+    camera,
+    renderer,
+    effect,
+    mouseX = 0,
+    mouseY = 0;
 
   useEffect(() => {
-    console.log(gltf);
-  }, [gltf]);
+    sceneSetup();
+    addCustomSceneObjects();
+    window.addEventListener('mousemove', getMousePos);
+    startAnimationLoop();
+    window.addEventListener('resize', handleWindowResize);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener('mousemove', getMousePos);
+      window.cancelAnimationFrame(requestID);
+    };
+  }, []);
 
-  return gltf ? <primitive object={gltf.scene} /> : null;
-};
+  const sceneSetup = () => {
+    console.log('init!');
+    // get container dimensions and use them for scene sizing
+    const width = window.innerWidth / 2;
+    const height = window.innerHeight;
 
-const BoxesPage = () => {
-  return (
-    <div style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '100%' }}>
-      <Canvas camera={{ position: [0, 0, 35] }}>
-        <ambientLight intensity={0.5} />
-        <spotLight position={[0, 0, 12]} />
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000);
+    camera.position.z = 20;
+    camera.position.x = 0;
+    camera.position.y = 0;
 
-        <OrbitControls />
-        <Suspense fallback={null}>
-          <mesh>
-            <MyBox url="/aldo-v7.glb" />
-          </mesh>
-        </Suspense>
-      </Canvas>
-    </div>
-  );
-};
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize(width, height);
 
-export default BoxesPage;
+    effect = new AsciiEffect(renderer, ' .,:;|iI+hHOE#`S', { invert: true });
+    effect.setSize(width, height);
+    effect.domElement.style.color = 'white';
+    effect.domElement.style.position = 'fixed';
+    effect.domElement.style.top = '0';
+
+    el.appendChild(effect.domElement);
+  };
+
+  const addCustomSceneObjects = () => {
+    const loader = new GLTFLoader();
+
+    loader.load(
+      '/scene.glb',
+      function (gltf) {
+        scene.add(gltf.scene);
+      },
+      xhr => {},
+      error => {
+        // called when loading has errors
+        console.error('An error happened', error);
+      }
+    );
+
+    const lights = [];
+    lights[0] = new THREE.PointLight(0xffffff, 1);
+    lights[1] = new THREE.PointLight(0xffffff, 0.7);
+
+    lights[0].position.set(500, 500, 500);
+    lights[1].position.set(-500, -500, -500);
+
+    scene.add(lights[0]);
+    scene.add(lights[1]);
+    // scene.add(lights[2]);
+  };
+
+  const startAnimationLoop = () => {
+    if (camera.position.x < 10 && camera.position.x > -10) {
+      camera.position.x -= (mouseX + camera.position.x) * 0.0003;
+    } else if (camera.position.x > 10) {
+      camera.position.x -= 0.005;
+    } else if (camera.position.x < -10) {
+      camera.position.x += 0.005;
+    }
+
+    if (camera.position.y < 10 && camera.position.y > -10) {
+      camera.position.y += (mouseY - camera.position.y) * 0.0003;
+    } else if (camera.position.y > 10) {
+      camera.position.y -= 0.005;
+    } else if (camera.position.y < -10) {
+      camera.position.y += 0.005;
+    }
+    camera.lookAt(scene.position);
+    effect.render(scene, camera);
+    requestID = window.requestAnimationFrame(startAnimationLoop);
+  };
+
+  const handleWindowResize = () => {
+    const width = window.innerWidth / 2;
+    const height = window.innerHeight;
+
+    renderer.setSize(width, height);
+    effect.setSize(width, height);
+    camera.aspect = width / height;
+
+    camera.updateProjectionMatrix();
+  };
+
+  const getMousePos = e => {
+    let windowHalfX = window.innerWidth / 2;
+    let windowHalfY = window.innerHeight / 2;
+    mouseX = e.clientX - windowHalfX;
+    mouseY = e.clientY - windowHalfY;
+  };
+
+  return <Container ref={ref => (el = ref)} />;
+}

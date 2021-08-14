@@ -18,6 +18,7 @@ export const SAside = styled.aside`
 export const SP = styled.p`
   transition: 0.3s ease-in-out;
   max-width: 500px;
-  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
   opacity: ${({ aboutOpen }) => (aboutOpen ? 1 : 0)};
 `;

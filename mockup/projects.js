@@ -87,7 +87,7 @@ export default [
     tags: ['next.js', 'redux', 'typescript', 'sass']
   },
   {
-    name: 'Tegra188',
+    name: 'Tegra1881',
     gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
@@ -121,7 +121,7 @@ export default [
     ]
   },
   {
-    name: 'Hellosolo',
+    name: 'Hellosolo2',
     gallery: [
       {
         url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
@@ -148,7 +148,7 @@ export default [
     tags: ['nuxt.js', 'vue.js', 'nuxt-auth', 'sass']
   },
   {
-    name: 'Hotel Casa do Eido',
+    name: 'Hotel Casa do Eido3',
     gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
@@ -168,7 +168,7 @@ export default [
     tags: ['next.js', 'redux', 'typescript', 'sass']
   },
   {
-    name: 'Tegra188',
+    name: 'Tegra1884321',
     gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
@@ -202,7 +202,7 @@ export default [
     ]
   },
   {
-    name: 'Hellosolo',
+    name: 'Hellowsolo',
     gallery: [
       {
         url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
@@ -229,7 +229,7 @@ export default [
     tags: ['nuxt.js', 'vue.js', 'nuxt-auth', 'sass']
   },
   {
-    name: 'Hotel Casa do Eido',
+    name: 'Hotewwl Casa do Eido',
     gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
@@ -249,7 +249,7 @@ export default [
     tags: ['next.js', 'redux', 'typescript', 'sass']
   },
   {
-    name: 'Tegra188',
+    name: 'T1egra188',
     gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
@@ -283,7 +283,7 @@ export default [
     ]
   },
   {
-    name: 'Hellosolo',
+    name: 'Hewllosolo',
     gallery: [
       {
         url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
@@ -310,7 +310,7 @@ export default [
     tags: ['nuxt.js', 'vue.js', 'nuxt-auth', 'sass']
   },
   {
-    name: 'Hotel Casa do Eido',
+    name: 'Hotel Casa dosss Eido',
     gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
@@ -330,7 +330,7 @@ export default [
     tags: ['next.js', 'redux', 'typescript', 'sass']
   },
   {
-    name: 'Tegra188',
+    name: 'Tegsra188',
     gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
@@ -364,7 +364,7 @@ export default [
     ]
   },
   {
-    name: 'Hellosolo',
+    name: 'Heallosolo',
     gallery: [
       {
         url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
@@ -391,7 +391,7 @@ export default [
     tags: ['nuxt.js', 'vue.js', 'nuxt-auth', 'sass']
   },
   {
-    name: 'Hotel Casa do Eido',
+    name: 'Hoatel Casa do Eido',
     gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'

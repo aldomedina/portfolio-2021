@@ -1,15 +1,17 @@
+import dynamic from 'next/dynamic';
 import Box from '../Box';
 import useWindowSize from '../Hooks/useWindowSize';
 import ProjectGallery from '../ProjectGallery';
-import Face from '../Face';
 import { SAside, SP } from './style';
+
+const DynamicComponentWithNoSSR = dynamic(() => import('../Face'), { ssr: false });
 
 const Aside = ({ activeProject, aboutOpen }) => {
   const { height } = useWindowSize();
 
   return (
     <SAside h={height}>
-      <Box fullW fullH dflex items="center" justify="center">
+      <Box fullW fullH dflex mt="calc(70px + 1rem)" p>
         {aboutOpen && (
           <SP aboutOpen={aboutOpen}>
             Front-end developer with a background in design and more than two years of experience in
@@ -20,7 +22,7 @@ const Aside = ({ activeProject, aboutOpen }) => {
           </SP>
         )}
       </Box>
-      <Face />
+      <DynamicComponentWithNoSSR aboutOpen={aboutOpen} />
       <ProjectGallery activeProject={activeProject} />
     </SAside>
   );
