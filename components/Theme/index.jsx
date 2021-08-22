@@ -30,9 +30,13 @@ const GlobalStyles = createGlobalStyle`
     font-weight: normal;
     text-transform: uppercase;
  }
- h1, h2, h3, h4, p, ul, li, button {
+ h1, h2, h3, h4, p,  button {
     margin: 0;
     padding: 0;
+ }
+ ul {
+   margin-top: .5rem;
+   margin-bottom: .5rem;
  }
  p {
     line-height: 1.5;
