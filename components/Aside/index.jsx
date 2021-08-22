@@ -4,7 +4,10 @@ import useWindowSize from '../Hooks/useWindowSize';
 import ProjectGallery from '../ProjectGallery';
 import { SAside, SP } from './style';
 
-const DynamicComponentWithNoSSR = dynamic(() => import('../Face'), { ssr: false });
+const DynamicComponentWithNoSSR = dynamic(() => import('../Face'), {
+  ssr: false,
+  loading: () => <p>...</p>
+});
 
 const Aside = ({ activeProject, aboutOpen }) => {
   const { height } = useWindowSize();

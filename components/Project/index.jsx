@@ -22,9 +22,9 @@ const Project = ({ project }) => {
         project={project}
       />
       <Accordion isActive={isActive}>
-        <GalleryWrapper>
-          {isActive &&
-            project.gallery?.map((asset, i) =>
+        {isActive && !!project?.gallery?.length && (
+          <GalleryWrapper>
+            {project.gallery.map((asset, i) =>
               asset.type === 'video' ? (
                 <SVideo
                   type={activeProject.type}
@@ -41,7 +41,8 @@ const Project = ({ project }) => {
                 <SImage type={activeProject.type} key={`gallery-${i}`} src={asset.url} />
               )
             )}
-        </GalleryWrapper>
+          </GalleryWrapper>
+        )}
         <Box p>
           <SP>{description}</SP>
           <Box my="1rem">
