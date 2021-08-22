@@ -11,34 +11,17 @@ export default [
       },
       {
         url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
-      },
-      {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
       }
     ],
     type: 'web',
     roles: ['DESIGNER', 'FRONT_END'],
     description:
-      'Cloud marketplace for asset managers and traders. It provides them with portfolio management and trading capabilities. The platform provides a dynamic subdomain service for each entity and specific layouts for each user role.',
-    endClient: 'Tegra188',
-    workingFor: 'Jigsaw',
+      "Manitoba's (Canada) directory of local businesses. It looks for increasing the businesses visibility trough blog posts, and listing them in the platform directy, powered by a custom search engine",
+    endClient: 'Winnibook',
+    workingFor: 'freelance',
     duration: 'Ongoing',
-    responsabilities: [
-      'On boarding flow with AWS Cognito',
-      'Dynamic form schema rendering',
-      'UI interactions/animations',
-      'Basket flow',
-      'Data Visualization.'
-    ],
-    tags: [
-      'react.js',
-      'redux',
-      'typescript',
-      'styled components',
-      'aws cognito',
-      'material ui',
-      'storybook'
-    ]
+    responsabilities: ['Full front-end development', 'UX/UI design', 'Brand-building'],
+    tags: ['react.js', 'next.js', 'styled components', 'react-spring', 'graphql', 'tailwind css']
   },
   // Tegra
   {
@@ -395,7 +378,7 @@ export default [
   // PRIMAVERA HACKER
   {
     name: 'PRIMAVERA HACKER',
-    Ggallery: [
+    gallery: [
       {
         url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
       },
@@ -410,6 +393,6 @@ export default [
     endClient: 'Collective project',
     workingFor: 'Hackeria Collective',
     duration: '3 years',
-    responsabilities: ['Co-productionG']
+    responsabilities: ['Co-production']
   }
 ];
