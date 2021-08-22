@@ -13,8 +13,8 @@ const Projects = ({ projects, projectsOpen }) => {
     if (!activeFilters.length) return projects;
     return projects.filter(
       proj =>
-        !!proj.tags.filter(tag => activeFilters.includes(tag)).length ||
-        !!proj.roles.filter(role => activeFilters.includes(role)).length
+        !!proj?.tags?.filter(tag => activeFilters.includes(tag)).length ||
+        !!proj?.roles?.filter(role => activeFilters.includes(role)).length
     );
   }, [projects, activeFilters]);
 

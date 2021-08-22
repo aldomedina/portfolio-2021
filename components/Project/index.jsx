@@ -5,7 +5,7 @@ import Box from '../Box';
 import Accordion from '../Accordion';
 import ProjectTitle from './ProjectTitle';
 import { GalleryWrapper, ProjectWrapper, SP } from './styles';
-import { SImage } from '../ProjectGallery/styles';
+import { SImage, SVideo } from '../ProjectGallery/styles';
 
 const Project = ({ project }) => {
   const { name, description, endClient, url, workingFor, duration, responsabilities, tags } =
@@ -23,9 +23,24 @@ const Project = ({ project }) => {
       />
       <Accordion isActive={isActive}>
         <GalleryWrapper>
-          {project.gallery?.map((img, i) => (
-            <SImage type={activeProject.type} key={`gallery-${i}`} src={img.url} />
-          ))}
+          {isActive &&
+            project.gallery?.map((asset, i) =>
+              asset.type === 'video' ? (
+                <SVideo
+                  type={activeProject.type}
+                  rstyle={{ width: '100%' }}
+                  controls="false"
+                  autoPlay
+                  loop
+                >
+                  {' '}
+                  <source src={asset.url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </SVideo>
+              ) : (
+                <SImage type={activeProject.type} key={`gallery-${i}`} src={asset.url} />
+              )
+            )}
         </GalleryWrapper>
         <Box p>
           <SP>{description}</SP>

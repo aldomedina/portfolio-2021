@@ -1,16 +1,20 @@
 export default [
-  // winnibook
+  // winnibook - done
   {
     name: 'Winnibook',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'video',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/video/upload/v1629644590/portfolio/video/winnibook-1_hdfl70.mp4'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'video',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/video/upload/v1629644480/portfolio/video/winnibook-2_nfcm6k.mp4'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        mobile: true,
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629643990/portfolio/Screenshot_2021-08-22_at_16.40.23_hgzero.png'
       }
     ],
     type: 'web',
@@ -23,23 +27,10 @@ export default [
     responsabilities: ['Full front-end development', 'UX/UI design', 'Brand-building'],
     tags: ['react.js', 'next.js', 'styled components', 'react-spring', 'graphql', 'tailwind css']
   },
-  // Tegra
+  // Tegra - done
   {
     name: 'Tegra188',
-    gallery: [
-      {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
-      },
-      {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
-      },
-      {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
-      },
-      {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
-      }
-    ],
+    gallery: [],
     type: 'web',
     roles: ['FRONT_END'],
     description:
@@ -64,15 +55,27 @@ export default [
       'storybook'
     ]
   },
-  // Hellosolo
+  // Hellosolo - done
   {
     name: 'Hellosolo',
     gallery: [
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/hellosolo-1_pybzdt.webp'
       },
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620656/portfolio/hellosolo-2_k0bvl3.webp'
+      },
+      {
+        mobile: true,
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620656/portfolio/hellosolo-3_hdqbos.webp'
+      },
+      {
+        mobile: true,
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620656/portfolio/hellosolo-4_j6nxy6.webp'
       }
     ],
     type: 'web',
@@ -92,15 +95,26 @@ export default [
     ],
     tags: ['nuxt.js', 'vue.js', 'nuxt-auth', 'sass']
   },
-  // Hotel Casa...
+  // Hotel Casa... - bug frame
   {
     name: 'Hotel Casa do Eido',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/casa-do-eido-1_pophio.webp'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620654/portfolio/casa-do-eido-2_yjtttb.webp'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/casa-do-eido-3_kxozcs.webp'
+      },
+      {
+        mobile: true,
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/casa-do-eido-4_cdgycd.webp'
       }
     ],
     type: 'web',
@@ -113,15 +127,21 @@ export default [
     responsabilities: ['Responsive UI implementation', 'API integration'],
     tags: ['next.js', 'tailwind css', 'sass', 'sanity io']
   },
-  // Hatch
+  // Hatch - done
   {
     name: 'HATCH AND CREATE',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/hatch-1_jdqqwe.webp'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/hatch-2_vuk5gz.webp'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620656/portfolio/hatch-3_cskps0.webp'
       }
     ],
     type: 'web',
@@ -138,17 +158,23 @@ export default [
       'Stripe payment integration.',
       'Online image edition'
     ],
-    tags: ['react.js', 'sass', 'etsy', 'stripe']
+    tags: ['react.js', 'sass', 'etsy', 'stripe', 'redux']
   },
-  // Golearn
+  // Golearn - done
   {
     name: 'Golearn',
     gallery: [
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/golearn-1_vlw75e.webp'
       },
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/golearn-2_csf1tf.webp'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/golearn-3_g8s47q.webp'
       }
     ],
     type: 'web',
@@ -167,20 +193,28 @@ export default [
     ],
     tags: ['react.js', 'redux', 'sass', 'dynamic form renderer']
   },
-  // Extrai
+  // Extrai - done
   {
     name: 'EXTRAI ART FESTIVAL',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'video',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/video/upload/v1629629126/portfolio/video/ext_1_gvjzmr.mp4'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629629497/portfolio/Screenshot_2021-08-22_at_12.51.00_nc6par.png'
+      },
+      {
+        mobile: true,
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629629591/portfolio/Screenshot_2021-08-22_at_12.53.06_rtkd24.png'
       }
     ],
     type: 'web',
     roles: ['FRONT_END', 'DESIGNER'],
     description: 'Hotel website with headless cms for services publishing.',
+
     url: 'www.extrai.pt',
     endClient: 'Extrai art festival',
     workingFor: 'freelance',
@@ -192,15 +226,17 @@ export default [
     ],
     tags: ['react.js', 'gatsby.js', 'styled components', 'three.js', '3d modeling']
   },
-  // Post-ism
+  // Post-ism - done
   {
     name: 'POST-ISM',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629642297/portfolio/post-ism-1_yeardb.gif'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629642297/portfolio/post-ism-2_exbok2.gif'
       }
     ],
     type: 'web',
@@ -216,15 +252,21 @@ export default [
     ],
     tags: ['vanilla.js', 'three.js']
   },
-  // WEB_DC
+  // WEB_DC - done
   {
     name: 'WEB_DC',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629642298/portfolio/web-dc-1_lj99tr.gif'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629642298/portfolio/web-dc-2_gzwhbr.gif'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620657/portfolio/web-dc-3_jobvqd.webp'
       }
     ],
     type: 'web',
@@ -237,15 +279,17 @@ export default [
     responsabilities: ['UX/UI Design', 'Dynamic UI implementation'],
     tags: ['vanilla.js']
   },
-  // Monitoreo
+  // Monitoreo - done
   {
     name: 'MONITORING',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620656/portfolio/monitoring-1_xu7qjg.webp'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620656/portfolio/monitoring-2_til4fe.webp'
       }
     ],
     type: 'web',
@@ -262,15 +306,17 @@ export default [
     ],
     tags: []
   },
-  // Anticipation
+  // Anticipation - done
   {
     name: 'ANTICIPATION',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620654/portfolio/anticipation-1_iooamj.webp'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629642292/portfolio/anticipation-2_jgxfqi.gif'
       }
     ],
     type: 'web',
@@ -288,15 +334,21 @@ export default [
     ],
     tags: []
   },
-  // Estrategia
+  // Estrategia - done
   {
     name: 'NATIONAL INNOVATION STRATEGY',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620657/portfolio/strategy-1_cdty1t.webp'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620657/portfolio/strategy-2_vgd9fr.webp'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620657/portfolio/strategy-3_fedefb.webp'
       }
     ],
     type: 'print',
@@ -312,15 +364,21 @@ export default [
     ],
     tags: []
   },
-  // RdC
+  // RdC - done
   {
     name: 'RED DE CLUBES',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620657/portfolio/red-1_emcwkj.webp'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620657/portfolio/red-2_dzkkk7.webp'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620657/portfolio/red-3_bt3ja1.webp'
       }
     ],
     type: 'education',
@@ -333,15 +391,21 @@ export default [
     responsabilities: ['Project Founder & Co-Direction', 'Design of the program', 'Fund Raising'],
     tags: ['3d modeling']
   },
-  // Escuelita
+  // Escuelita - done
   {
     name: 'ESCUELITA DE INVENTORES',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/escuelita-1_dbr7hr.webp'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/escuelita-2_lhotcl.webp'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620655/portfolio/escuelita-3_fbypjc.webp'
       }
     ],
     type: 'education',
@@ -359,10 +423,16 @@ export default [
     name: 'MARCHA PIRATA',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629642293/portfolio/marcha-1_ytl0ji.gif'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629642294/portfolio/marcha-2_mcvs29.gif'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629642296/portfolio/marcha-3_z6va2y.gif'
       }
     ],
     type: 'activism',
@@ -375,15 +445,17 @@ export default [
     responsabilities: ['Systeme development based in Pirate Box', 'Design communication research'],
     tags: ['open wrt', '3d modeling']
   },
-  // PRIMAVERA HACKER
+  // PRIMAVERA HACKER - done
   {
     name: 'PRIMAVERA HACKER',
     gallery: [
       {
-        url: 'https://www.free-mockup.com/wp-content/uploads/edd/2020/04/Responsive-Web-Browser-PSD-Mockup-1000x750.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620656/portfolio/phacker-1_p1ikmf.webp'
       },
       {
-        url: 'https://speckyboy.com/wp-content/uploads/2019/01/website-responsive-mockup-template-high-res-02.jpg'
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1629620656/portfolio/phacker-2_ufynv4.webp'
       }
     ],
     type: 'activism',
