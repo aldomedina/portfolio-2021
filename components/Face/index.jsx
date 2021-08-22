@@ -33,7 +33,7 @@ export default function Face({ aboutOpen }) {
   const sceneSetup = () => {
     console.log('init!');
     // get container dimensions and use them for scene sizing
-    const width = window.innerWidth / 2;
+    const width = window.innerWidth > 768 ? window.innerWidth / 2 : window.innerWidth;
     const height = window.innerHeight;
 
     scene = new THREE.Scene();
@@ -103,7 +103,7 @@ export default function Face({ aboutOpen }) {
   };
 
   const handleWindowResize = () => {
-    const width = window.innerWidth / 2;
+    const width = window.innerWidth > 768 ? window.innerWidth / 2 : window.innerWidth;
     const height = window.innerHeight;
 
     renderer.setSize(width, height);

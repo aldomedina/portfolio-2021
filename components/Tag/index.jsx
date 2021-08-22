@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import breakpoints from '../Theme/breakpoints';
 
 export const Tag = styled.span`
+  min-width: max-content;
   box-sizing: border-box;
-
   transition: all 0.15s ease-in-out;
   border-radius: 999px;
   border: 1px solid ${({ theme }) => theme.colors.black};
@@ -26,4 +27,10 @@ export const TagsWrapper = styled.div`
   gap: 0.5rem;
   margin-top: ${({ mt, my }) => mt ?? my ?? ''};
   margin-bottom: ${({ mb, my }) => mb ?? my ?? ''};
+
+  @media ${breakpoints.sm} {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 0 0.5rem;
+  }
 `;

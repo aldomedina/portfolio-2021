@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoints from '../Theme/breakpoints';
 
 export const SNav = styled.nav`
   position: sticky;
@@ -10,6 +11,18 @@ export const SNav = styled.nav`
   }
 `;
 
-export const SButton = styled.button`
-  width: 100%;
+export const FiltersWrapper = styled.div`
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  @media ${breakpoints.sm} {
+    flex-direction: column;
+  }
+`;
+
+export const SP = styled.p`
+  margin-bottom: 0.5rem;
+  @media ${breakpoints.sm} {
+    margin-bottom: 0rem;
+  }
 `;

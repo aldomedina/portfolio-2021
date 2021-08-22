@@ -1,19 +1,26 @@
-import { SHeader, Title, Subtitle, AboutButton } from './styles';
+import { SHeader, Title, Subtitle, STitleWrapper, AboutButton } from './styles';
 
-const Header = ({ setAboutOpen, setActiveProject, aboutOpen }) => (
+const Header = ({ setAboutOpen, setActiveProject, aboutOpen, setProjectsOpen }) => (
   <SHeader>
-    <div>
+    <a
+      onClick={() => {
+        setAboutOpen(false);
+        setActiveProject(false);
+        setProjectsOpen(false);
+      }}
+    >
       <Title>Aldo Medina</Title>
       <Subtitle>Front-end & Designer</Subtitle>
-    </div>
+    </a>
     <div>
       <AboutButton
         onClick={() => {
           setAboutOpen(isOpen => !isOpen);
           setActiveProject(false);
+          setProjectsOpen(false);
         }}
       >
-        {aboutOpen ? ':)' : 'ABOUT'}
+        {aboutOpen ? ':)' : 'ME?'}
       </AboutButton>
     </div>
   </SHeader>

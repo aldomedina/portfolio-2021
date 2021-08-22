@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export default styled.div`
+  ${({ h }) => h && `height: ${h}`};
+  ${({ w }) => w && `width: ${w}`};
   ${({ fullH }) => fullH && `height: 100%`};
   ${({ fullW }) => fullW && `width: 100%`};
   ${({ dflex }) => dflex && 'display: flex'};

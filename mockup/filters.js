@@ -2,6 +2,9 @@ export default {
   tech: [
     'react.js',
     'next.js',
+    'vue.js',
+    'nuxt.js',
+    'gatsby.js',
     'redux',
     'typescript',
     'styled components',
@@ -9,17 +12,17 @@ export default {
     'aws cognito',
     'stripe',
     'gatsby',
-    'vue.js',
-    'nuxt.js',
     'material ui',
     'cypress',
     'sanity.io',
-    'tailwind CSS',
+    'tailwind css',
     'netlify',
     'storybook',
     'sass',
     'three.js',
-    'nuxt-auth'
+    'nuxt-auth',
+    'dynamic form renderer',
+    '3d modeling'
   ],
   roles: ['FRONT_END', 'DESIGNER', 'OTHER']
 };

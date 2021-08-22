@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoints from '../Theme/breakpoints';
 
 export const SPanel = styled.div`
   height: ${({ h }) => h}px;
@@ -14,6 +15,13 @@ export const SPanel = styled.div`
   transition: all 0.12s ease-in-out;
   transform: ${({ isOpen }) => `translate3d(${isOpen ? '0%' : '-100%'}, 0,0)`};
   background-color: ${({ theme }) => theme.colors.grey};
+
+  height: ${({ h }) => h}px;
+  overflow-y: auto;
+
+  @media ${breakpoints.sm} {
+    display: none;
+  }
 `;
 
 export const SImage = styled.img`
@@ -27,4 +35,8 @@ export const SImage = styled.img`
     border: solid 0.5rem black;
     border-radius: 1rem;
 `}
+
+  @media ${breakpoints.sm} {
+    max-width: none;
+  }
 `;

@@ -1,18 +1,12 @@
 import styled from 'styled-components';
+import breakpoints from '../Theme/breakpoints';
 
 export const SAside = styled.aside`
   position: relative;
   flex: 1;
   color: ${({ theme }) => theme.colors.lightgrey};
   background: ${({ theme }) => theme.colors.black};
-  height: ${({ h }) => h}px;
-
-  overflow-y: auto;
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  overflow: hidden;
 `;
 
 export const SP = styled.p`
@@ -20,5 +14,11 @@ export const SP = styled.p`
   max-width: 500px;
   font-size: 2rem;
   font-weight: bold;
+  margin-top: calc(70px + 1rem);
   opacity: ${({ aboutOpen }) => (aboutOpen ? 1 : 0)};
+
+  @media ${breakpoints.sm} {
+    margin-top: calc(35px + 1rem);
+    font-size: 1.25rem;
+  }
 `;

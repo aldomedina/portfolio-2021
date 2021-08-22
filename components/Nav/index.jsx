@@ -2,13 +2,22 @@ import { useState, useContext } from 'react';
 import Box from '../Box';
 import FiltersIcon from '../FilterIcon';
 import Accordion from '../Accordion';
-import { SButton, SNav } from './styles';
+import { FiltersWrapper, SNav, SP } from './styles';
 import { AppContext } from '../../pages';
 import { Tag, TagsWrapper } from '../Tag';
 
 const Nav = () => {
-  const [filtersOpen, setFiltersOpen] = useState(false);
-  const { allFilters, activeFilters, setActiveFilters } = useContext(AppContext);
+  const {
+    allFilters,
+    activeFilters,
+    setActiveFilters,
+    setProjectsOpen,
+    filtersOpen,
+    setFiltersOpen,
+    setAboutOpen,
+    aboutOpen
+  } = useContext(AppContext);
+
   const handleFilterClick = filter =>
     setActiveFilters(
       activeFilters.includes(filter)
@@ -20,16 +29,31 @@ const Nav = () => {
 
   return (
     <SNav>
-      <SButton onClick={() => setFiltersOpen(!filtersOpen)}>
+      <Box fullW h={'37px'}>
         <Box fullW dflex justify="space-between" p>
-          <span>PROJECTS</span>
-          <FiltersIcon isOpen={filtersOpen} />
+          <Box
+            flex={1}
+            onClick={() => {
+              setProjectsOpen(open => !open);
+              aboutOpen && setAboutOpen(false);
+            }}
+          >
+            PROJECTS
+          </Box>
+          <button
+            onClick={() => {
+              setProjectsOpen(open => true);
+              setFiltersOpen(!filtersOpen);
+            }}
+          >
+            <FiltersIcon isOpen={filtersOpen} />
+          </button>
         </Box>
-      </SButton>
+      </Box>
       <Accordion isActive={filtersOpen}>
-        <Box dflex customPadding="1rem" gap="1rem">
+        <FiltersWrapper>
           <Box flex={3}>
-            <p style={{ marginBottom: '.5rem' }}>techs</p>
+            <SP>techs</SP>
             <TagsWrapper>
               {allFilters.tech?.map((filter, i) => (
                 <Tag
@@ -44,7 +68,7 @@ const Nav = () => {
             </TagsWrapper>
           </Box>
           <Box flex={1}>
-            <p style={{ marginBottom: '.5rem' }}>role</p>
+            <SP>role</SP>
             <TagsWrapper>
               {allFilters.roles?.map((filter, i) => (
                 <Tag
@@ -58,7 +82,7 @@ const Nav = () => {
               ))}
             </TagsWrapper>
           </Box>
-        </Box>
+        </FiltersWrapper>
       </Accordion>
     </SNav>
   );

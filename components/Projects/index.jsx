@@ -5,7 +5,7 @@ import Nav from '../Nav';
 import Project from '../Project';
 import { SMain } from './styles';
 
-const Projects = ({ projects, aboutOpen }) => {
+const Projects = ({ projects, projectsOpen }) => {
   const { height, width } = useWindowSize();
   const { activeFilters } = useContext(AppContext);
 
@@ -19,7 +19,7 @@ const Projects = ({ projects, aboutOpen }) => {
   }, [projects, activeFilters]);
 
   return (
-    <SMain h={height}>
+    <SMain h={height} isOpen={projectsOpen}>
       <Nav />
       <section>
         {filteredProjects?.map((el, i) => (

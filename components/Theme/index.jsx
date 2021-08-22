@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     scrollbar-color: black #c3c0c0;
     &::-webkit-scrollbar {
       width: 4px;
+      height: 4px;
     }
 
     &::-webkit-scrollbar-track {
@@ -37,10 +38,12 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     font-family: "Space Grotesk";
   }
+  a,button {
+    cursor: pointer;
+  }
   button {
     border: none;
     background-color: transparent;    
-    cursor: pointer;
     font-family: inherit; /* 1 */
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */

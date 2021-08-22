@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoints from '../Theme/breakpoints';
 
 export const ProjectWrapper = styled.article`
   border-bottom: 1px solid ${({ theme }) => theme.colors.black};
@@ -20,4 +21,16 @@ export const Title = styled.div`
 
 export const SP = styled.p`
   max-width: 500px;
+`;
+
+export const GalleryWrapper = styled.div`
+  overflow-x: auto;
+  background-color: ${({ theme }) => theme.colors.lightgrey};
+  display: none;
+  @media ${breakpoints.sm} {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    height: 50vh;
+  }
 `;

@@ -2,7 +2,7 @@ export default {
   colors: {
     black: '#000',
     white: '#FFF',
-    lightgrey: '#FCFCFC',
+    lightgrey: '#E8E8E8',
     grey: '#C3C0C0'
   },
   fonts: {

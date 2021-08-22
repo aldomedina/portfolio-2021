@@ -4,7 +4,8 @@ import { AppContext } from '../../pages';
 import Box from '../Box';
 import Accordion from '../Accordion';
 import ProjectTitle from './ProjectTitle';
-import { ProjectWrapper, SP } from './styles';
+import { GalleryWrapper, ProjectWrapper, SP } from './styles';
+import { SImage } from '../ProjectGallery/styles';
 
 const Project = ({ project }) => {
   const { name, description, endClient, url, workingFor, duration, responsabilities, tags } =
@@ -21,6 +22,11 @@ const Project = ({ project }) => {
         project={project}
       />
       <Accordion isActive={isActive}>
+        <GalleryWrapper>
+          {project.gallery?.map((img, i) => (
+            <SImage type={activeProject.type} key={`gallery-${i}`} src={img.url} />
+          ))}
+        </GalleryWrapper>
         <Box p>
           <SP>{description}</SP>
           <Box my="1rem">
