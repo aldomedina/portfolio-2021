@@ -1,5 +1,5 @@
 export default [
-  // winnibook - done
+  // Winnibook
   {
     name: 'Winnibook',
     gallery: [
@@ -27,7 +27,7 @@ export default [
     responsabilities: ['Full front-end development', 'UX/UI design', 'Brand-building'],
     tags: ['react.js', 'next.js', 'styled components', 'react-spring', 'graphql', 'tailwind css']
   },
-  // Tegra - done
+  // Tegra
   {
     name: 'Tegra188',
     gallery: [],
@@ -56,7 +56,7 @@ export default [
       'dynamic form renderer'
     ]
   },
-  // Hellosolo - done
+  // Hellosolo
   {
     name: 'Hellosolo',
     gallery: [
@@ -82,7 +82,7 @@ export default [
     type: 'web',
     roles: ['FRONT_END'],
     description:
-      'Platform that allows users to browse and purchase tickets to dating events. Users who attend can then match with other users and start communicating through the platform. Organisations can create accounts to host and manage their own events.',
+      'Platform that allows users to browse and purchase tickets to dating events. Users who attend can then match with other attendees and start communicating through the platform. Organisations can create accounts to host and manage their own events.',
     url: 'www.hellosolo.com',
     endClient: 'Hellosolo',
     workingFor: 'StudioGraphene',
@@ -96,7 +96,7 @@ export default [
     ],
     tags: ['nuxt.js', 'vue.js', 'nuxt-auth', 'sass']
   },
-  // Hotel Casa... - bug frame
+  // Hotel Casa do Eido
   {
     name: 'Hotel Casa do Eido',
     gallery: [
@@ -120,15 +120,15 @@ export default [
     ],
     type: 'web',
     roles: ['FRONT_END'],
-    description: 'Hotel website with headless cms for services publishing.',
-    url: 'casa-do-eido-fe.vercel.app/',
+    description: 'Hotel website with headless CMS for publishing different services.',
+    url: 'casa-do-eido-fe.vercel.app/ (back-up)',
     endClient: 'Casa do eido',
     workingFor: 'freelance',
     duration: '2 months (ongoing)',
     responsabilities: ['Responsive UI implementation', 'API integration'],
     tags: ['next.js', 'tailwind css', 'sass', 'sanity io']
   },
-  // Hatch - done
+  // Hatch
   {
     name: 'HATCH AND CREATE',
     gallery: [
@@ -148,7 +148,7 @@ export default [
     type: 'web',
     roles: ['FRONT_END'],
     description:
-      'Web application for developing and managing design cases for various products that are sold internally through Hatch, Shopify or Etsy platform. It also has a community section that it’s handled through drupal.',
+      'Web application for developing and managing design cases for various products that are sold through the app, and also trough Shopify or Etsy. It has a community section that it’s handled through Drupal.',
     endClient: 'Hatch',
     workingFor: 'Studio Graphene',
     duration: '6 months',
@@ -161,7 +161,7 @@ export default [
     ],
     tags: ['react.js', 'sass', 'etsy', 'stripe', 'redux']
   },
-  // Golearn - done
+  // Golearn
   {
     name: 'Golearn',
     gallery: [
@@ -194,7 +194,7 @@ export default [
     ],
     tags: ['react.js', 'redux', 'sass', 'dynamic form renderer']
   },
-  // Extrai - done
+  // Extrai
   {
     name: 'EXTRAI ART FESTIVAL',
     gallery: [
@@ -214,7 +214,7 @@ export default [
     ],
     type: 'web',
     roles: ['FRONT_END', 'DESIGNER'],
-    description: 'Hotel website with headless cms for services publishing.',
+    description: "Art festival's website",
 
     url: 'www.extrai.pt',
     endClient: 'Extrai art festival',
@@ -227,7 +227,7 @@ export default [
     ],
     tags: ['react.js', 'gatsby.js', 'styled components', 'three.js', '3d modeling']
   },
-  // Post-ism - done
+  // Post-ism
   {
     name: 'POST-ISM',
     gallery: [
@@ -242,8 +242,8 @@ export default [
     ],
     type: 'web',
     roles: ['FRONT_END', 'DESIGNER'],
-    description: 'Website for Post-im design exhibition',
-    endClient: 'Lisbon University - Fine Arts Faculty',
+    description: 'Website for the design exhibition "Post-ism"',
+    endClient: 'University of Lisbon - Fine Arts Faculty',
     workingFor: 'freelance',
     duration: '3 months',
     responsabilities: [
@@ -253,7 +253,7 @@ export default [
     ],
     tags: ['vanilla.js', 'three.js']
   },
-  // WEB_DC - done
+  // WEB_DC
   {
     name: 'WEB_DC',
     gallery: [
@@ -273,14 +273,14 @@ export default [
     type: 'web',
     roles: ['FRONT_END', 'DESIGNER'],
     description:
-      'Proposal to build an online space that aggregates and represents the academic production in Communication Design of the University of Lisbon.',
-    endClient: 'Lisbon University - Fine Arts Faculty',
+      "Proposal to build an online space that aggregates and represents University of Lisbon's academic production in Communication Design.",
+    endClient: 'University of Lisbon - Fine Arts Faculty',
     workingFor: 'freelance',
     duration: '4 month',
     responsabilities: ['UX/UI Design', 'Dynamic UI implementation'],
     tags: ['vanilla.js']
   },
-  // Monitoreo - done
+  // Monitoreo
   {
     name: 'MONITORING',
     gallery: [
@@ -307,7 +307,7 @@ export default [
     ],
     tags: []
   },
-  // Anticipation - done
+  // Anticipation
   {
     name: 'ANTICIPATION',
     gallery: [
@@ -335,7 +335,7 @@ export default [
     ],
     tags: []
   },
-  // Estrategia - done
+  // Estrategia
   {
     name: 'NATIONAL INNOVATION STRATEGY',
     gallery: [
@@ -365,7 +365,7 @@ export default [
     ],
     tags: []
   },
-  // RdC - done
+  // RdC
   {
     name: 'RED DE CLUBES',
     gallery: [
@@ -392,7 +392,7 @@ export default [
     responsabilities: ['Project Founder & Co-Direction', 'Design of the program', 'Fund Raising'],
     tags: ['3d modeling']
   },
-  // Escuelita - done
+  // Escuelita
   {
     name: 'ESCUELITA DE INVENTORES',
     gallery: [
@@ -412,11 +412,11 @@ export default [
     type: 'education',
     roles: ['OTHER'],
     description:
-      'Based on processes of technological empowerment, Escuelita de Inventores sought  to expand the human development expectations of geographically isolated young people',
+      'Based on processes of technological empowerment, Escuelita de Inventores sought  to expand the human development expectations of geographically isolated youth.',
     endClient: 'Personal project',
     workingFor: 'Academic purposes',
     duration: '1 year',
-    responsabilities: ['Masther degree thesis'],
+    responsabilities: ["Master's degree thesis"],
     tags: ['3d modeling']
   },
   // Marcha Pirata
@@ -439,14 +439,14 @@ export default [
     type: 'activism',
     roles: ['OTHER'],
     description:
-      '"Marcha Pirata" (pirate riot) consists of a wireless network built from TPLinks Mr-3020 routers modified with the Pirate Box system and signal amplification antennas. The project sought to disseminate an alternative image to that presented by the mass media by projecting images in politically apathetic spaces (eg private universities, shopping malls) captured and shared by protesters at the moment of the manifestation.',
+      '"Marcha Pirata" (pirate riot) consists of a wireless network built from TPLink Mr-3020 routers modified with the Pirate Box system and signal amplification antennas. The project sought to disseminate an alternative image to that presented by the mass media by projecting images in politically apathetic spaces (eg private universities, shopping malls) captured and shared by protesters at the moment of the manifestation.',
     endClient: 'Collective project',
     workingFor: 'Academic purposes',
     duration: '3 months',
     responsabilities: ['Systeme development based in Pirate Box', 'Design communication research'],
     tags: ['open wrt', '3d modeling']
   },
-  // PRIMAVERA HACKER - done
+  // Primavera Hacker
   {
     name: 'PRIMAVERA HACKER',
     gallery: [
@@ -462,7 +462,7 @@ export default [
     type: 'activism',
     roles: ['OTHER'],
     description:
-      'Primavera Hacker was an anual free conference on the relationship between technology, politics and creative practices that sought to foster a dissenting view of the dominant economic logic. The collective Hackería conceived technology not as a neutral object, but as one that is permeated by political decisions in its design, development and uses. The event consists of lectures, exhibitions, and workshops. Four versions have taken place so far.',
+      "Primavera Hacker was an anual free conference on the relationship between technology, politics and creative practices that sought to foster a view dissenting from the dominant economic logic. The collective Hackería conceived technology not as a neutral object, but as one that is permeated by political decisions in it's design, development and uses. The event consists of lectures, exhibitions, and workshops. Four versions have taken place so far.",
     endClient: 'Collective project',
     workingFor: 'Hackeria Collective',
     duration: '3 years',
