@@ -1,11 +1,13 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import * as THREE from 'three';
 import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect';
 import GLTFLoader from 'three-gltf-loader';
 import useAnimationFrame from '../Hooks/useAnimationFrame';
+
 const Container = styled.div`
   height: 100%;
+  user-select: none;
 `;
 export default function Face({ aboutOpen }) {
   let requestID,
@@ -16,7 +18,7 @@ export default function Face({ aboutOpen }) {
     effect,
     mouseX = 0,
     mouseY = 0;
-
+  const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     sceneSetup();
     addCustomSceneObjects();
@@ -61,6 +63,7 @@ export default function Face({ aboutOpen }) {
       '/scene.glb',
       function (gltf) {
         scene.add(gltf.scene);
+        setIsLoaded(true);
       },
       xhr => {},
       error => {
@@ -120,5 +123,5 @@ export default function Face({ aboutOpen }) {
     mouseY = e.clientY - windowHalfY;
   };
 
-  return <Container ref={ref => (el = ref)} />;
+  return <Container ref={ref => (el = ref)}>{!isLoaded && <div>loading face...</div>}</Container>;
 }
