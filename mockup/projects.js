@@ -121,10 +121,10 @@ export default [
     type: 'web',
     roles: ['FRONT_END'],
     description: 'Hotel website with headless cms for services publishing.',
-    url: 'www.hellosolo.com',
+    url: 'casa-do-eido-fe.vercel.app/',
     endClient: 'Casa do eido',
     workingFor: 'freelance',
-    duration: '1 month',
+    duration: '2 months (ongoing)',
     responsabilities: ['Responsive UI implementation', 'API integration'],
     tags: ['next.js', 'tailwind css', 'sass', 'sanity io']
   },
