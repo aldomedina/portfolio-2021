@@ -52,7 +52,8 @@ export default [
       'styled components',
       'aws cognito',
       'material ui',
-      'storybook'
+      'storybook',
+      'dynamic form renderer'
     ]
   },
   // Hellosolo - done
