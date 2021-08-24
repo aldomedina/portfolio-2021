@@ -20,7 +20,7 @@ export default [
     type: 'web',
     roles: ['DESIGNER', 'FRONT_END'],
     description:
-      "Manitoba's (Canada) directory of local businesses. It looks for increasing the businesses visibility trough blog posts, and listing them in the platform directy, powered by a custom search engine",
+      "Manitoba's (Canada) directory of local businesses. It seeks to increase local business visibility through an online directory and blog posts about them, powered by a custom search engine",
     endClient: 'Winnibook',
     workingFor: 'freelance',
     duration: 'Ongoing',

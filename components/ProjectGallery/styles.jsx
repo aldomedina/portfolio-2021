@@ -40,7 +40,7 @@ export const SVideo = styled.video`
 `;
 export const SImage = styled.img`
   max-width: ${({ mobile }) => (mobile ? '350px' : '80%')};
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
   ${({ type }) =>
     type === 'web' &&
     `
