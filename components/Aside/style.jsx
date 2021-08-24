@@ -22,3 +22,14 @@ export const SP = styled.p`
     font-size: 1.25rem;
   }
 `;
+
+export const LoaderWrapper = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+`;

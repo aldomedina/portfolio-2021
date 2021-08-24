@@ -7,8 +7,10 @@ import useAnimationFrame from '../Hooks/useAnimationFrame';
 
 const Container = styled.div`
   height: 100%;
+  position: relative;
   user-select: none;
 `;
+
 export default function Face({ aboutOpen }) {
   let requestID,
     el,
@@ -123,5 +125,5 @@ export default function Face({ aboutOpen }) {
     mouseY = e.clientY - windowHalfY;
   };
 
-  return <Container ref={ref => (el = ref)}>{!isLoaded && <div>loading face...</div>}</Container>;
+  return <Container ref={ref => (el = ref)} />;
 }
