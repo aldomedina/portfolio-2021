@@ -11,7 +11,6 @@ export default {
     'graphql',
     'aws cognito',
     'stripe',
-    'gatsby',
     'material ui',
     'cypress',
     'sanity.io',

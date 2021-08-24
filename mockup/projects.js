@@ -25,7 +25,15 @@ export default [
     workingFor: 'freelance',
     duration: 'Ongoing',
     responsabilities: ['Full front-end development', 'UX/UI design', 'Brand-building'],
-    tags: ['react.js', 'next.js', 'styled components', 'react-spring', 'graphql', 'tailwind css']
+    tags: [
+      'react.js',
+      'next.js',
+      'styled components',
+      'react-spring',
+      'graphql',
+      'tailwind css',
+      'vercel'
+    ]
   },
   // Tegra
   {
@@ -53,7 +61,8 @@ export default [
       'aws cognito',
       'material ui',
       'storybook',
-      'dynamic form renderer'
+      'dynamic form renderer',
+      'cypress'
     ]
   },
   // Hellosolo
@@ -126,7 +135,7 @@ export default [
     workingFor: 'freelance',
     duration: '2 months (ongoing)',
     responsabilities: ['Responsive UI implementation', 'API integration'],
-    tags: ['next.js', 'tailwind css', 'sass', 'sanity io']
+    tags: ['react.js', 'next.js', 'tailwind css', 'sass', 'sanity.io', 'vercel']
   },
   // Hatch
   {
@@ -225,7 +234,7 @@ export default [
       'Responsive UI implementation',
       '3D interactive shapes implementation'
     ],
-    tags: ['react.js', 'gatsby.js', 'styled components', 'three.js', '3d modeling']
+    tags: ['react.js', 'gatsby.js', 'styled components', 'three.js', '3d modeling', 'netlify']
   },
   // Post-ism
   {
