@@ -15,7 +15,6 @@ export const SP = styled.p`
   font-size: 2rem;
   font-weight: bold;
   margin-top: calc(70px + 1rem);
-  opacity: ${({ aboutOpen }) => (aboutOpen ? 1 : 0)};
 
   @media ${breakpoints.sm} {
     margin-top: calc(35px + 1rem);
@@ -32,4 +31,16 @@ export const LoaderWrapper = styled.div`
   justify-content: center;
   top: 0;
   left: 0;
+`;
+
+export const AboutWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y: auto;
+  padding: ${({ theme }) => theme.spacing};
+  position: relative;
+  z-index: 2;
+  opacity: ${({ aboutOpen }) => (aboutOpen ? 1 : 0)};
+  pointer-events: ${({ aboutOpen }) => (aboutOpen ? 'visible' : 'none')};
 `;

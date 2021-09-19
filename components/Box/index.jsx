@@ -16,6 +16,8 @@ export default styled.div`
   ${({ m, theme }) => m && `margin: ${theme.spacing}`};
   ${({ customPadding }) => customPadding && `padding: ${customPadding}`};
   ${({ pointer }) => pointer && `cursor: pointer`};
+  ${({ overflowY }) => overflowY && 'overflow-y: auto'};
+  ${({ relative }) => relative && 'position: relative'};
   ${({ br, theme }) => br && `border-right: 1px solid ${theme.colors.black}`};
   margin-top: ${({ mt, my }) => mt ?? my ?? ''};
   margin-bottom: ${({ mb, my }) => mb ?? my ?? ''};

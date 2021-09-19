@@ -10,6 +10,7 @@ export const SHeader = styled.header`
   display: flex;
   justify-content: space-between;
   color: ${({ theme }) => theme.colors.lightgrey};
+  z-index: 999;
   @media ${breakpoints.sm} {
     width: 100%;
     height: 56px;

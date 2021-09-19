@@ -1,17 +1,19 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import styled from 'styled-components';
 import * as THREE from 'three';
 import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect';
 import GLTFLoader from 'three-gltf-loader';
-import useAnimationFrame from '../Hooks/useAnimationFrame';
+import { AppContext } from '../../pages';
 
 const Container = styled.div`
   height: 100%;
   position: relative;
   user-select: none;
+  transition: 0.15s;
+  opacity: ${({ aboutOpen }) => (aboutOpen ? 0.5 : 1)};
 `;
 
-export default function Face({ aboutOpen }) {
+export default function Face() {
   let requestID,
     el,
     scene,
@@ -21,6 +23,7 @@ export default function Face({ aboutOpen }) {
     mouseX = 0,
     mouseY = 0;
   const [isLoaded, setIsLoaded] = useState(false);
+  const { aboutOpen } = useContext(AppContext);
   useEffect(() => {
     sceneSetup();
     addCustomSceneObjects();
@@ -125,5 +128,5 @@ export default function Face({ aboutOpen }) {
     mouseY = e.clientY - windowHalfY;
   };
 
-  return <Container ref={ref => (el = ref)} />;
+  return <Container ref={ref => (el = ref)} aboutOpen={aboutOpen} />;
 }
