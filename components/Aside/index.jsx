@@ -29,7 +29,6 @@ const Aside = ({ activeProject, aboutOpen }) => {
         </SP>
       </AboutWrapper>
       <DynamicComponentWithNoSSR aboutOpen={aboutOpen} />
-
       <ProjectGallery activeProject={activeProject} />
     </SAside>
   );
