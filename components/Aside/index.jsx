@@ -1,11 +1,10 @@
 import dynamic from 'next/dynamic';
-import Box from '../Box';
 import useWindowSize from '../Hooks/useWindowSize';
 import Loader from '../Loader';
 import ProjectGallery from '../ProjectGallery';
 import { SAside, SP, LoaderWrapper, AboutWrapper } from './style';
 
-const DynamicComponentWithNoSSR = dynamic(() => import('../Face'), {
+const Face = dynamic(() => import('../Face'), {
   ssr: false,
   loading: () => (
     <LoaderWrapper>
@@ -28,7 +27,7 @@ const Aside = ({ activeProject, aboutOpen }) => {
           interest in creating trough technology.
         </SP>
       </AboutWrapper>
-      <DynamicComponentWithNoSSR aboutOpen={aboutOpen} />
+      <Face aboutOpen={aboutOpen} />
       <ProjectGallery activeProject={activeProject} />
     </SAside>
   );

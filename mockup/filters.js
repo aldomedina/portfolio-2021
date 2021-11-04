@@ -21,7 +21,8 @@ export default {
     'three.js',
     'nuxt-auth',
     'dynamic form renderer',
-    '3d modeling'
+    '3d modeling',
+    'tensorflow'
   ],
   roles: ['FRONT_END', 'DESIGNER', 'OTHER']
 };
