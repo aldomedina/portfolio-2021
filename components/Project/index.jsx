@@ -32,6 +32,7 @@ const Project = ({ project }) => {
                   controls="false"
                   autoPlay
                   loop
+                  muted
                 >
                   {' '}
                   <source src={asset.url} type="video/mp4" />

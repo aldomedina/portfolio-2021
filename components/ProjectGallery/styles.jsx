@@ -26,7 +26,7 @@ export const SPanel = styled.div`
 
 export const SVideo = styled.video`
   max-width: 80%;
-  max-height: max-content;
+  max-height: 100%;
   align-self: center;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
   ${({ type }) =>
