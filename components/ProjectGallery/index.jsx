@@ -14,6 +14,7 @@ const ProjectGallery = ({ activeProject }) => {
               controls="false"
               autoPlay
               loop
+              muted
             >
               <source src={asset.url} type="video/mp4" />
               Your browser does not support the video tag.
