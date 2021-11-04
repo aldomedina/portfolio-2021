@@ -24,6 +24,7 @@ export default [
       }
     ],
     type: 'web',
+    url: 'https://arte-colonialista-faz-mal-av-ista.vercel.app/',
     roles: ['DESIGNER', 'FRONT_END', 'OTHER'],
     description:
       "Thesis project for a master's degree in Communication Design. Application based on a fictional story in which Portuguese authorities seek to revive historical figures of the colonial era, commemorated in various monuments located in the city of Lisbon. In practical terms, the web application uses the cell phone camera to identify these monuments, based on a monument detection model trained for this project. Once the monument is identified, a pre-trained object detection model (COCO_SSD) is used. The output was modified to emulate the way these colonial characters would observe the actual world. This application sought to expose some of the most problematic features of Portuguese society, whose patriotic pride based on 'maritime epics' is still quite active. ",
