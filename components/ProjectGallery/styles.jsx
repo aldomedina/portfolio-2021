@@ -26,7 +26,7 @@ export const SPanel = styled.div`
 
 export const SVideo = styled.video`
   max-width: 80%;
-  max-height: 100%;
+  max-height: max-content;
   align-self: center;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
   ${({ type }) =>
@@ -37,6 +37,10 @@ export const SVideo = styled.video`
     border: solid 0.5rem black;
     border-radius: 1rem;
 `}
+  @media ${breakpoints.sm} {
+    max-width: 80%;
+    max-height: 100%;
+  }
 `;
 export const SImage = styled.img`
   max-width: ${({ mobile }) => (mobile ? '350px' : '80%')};
