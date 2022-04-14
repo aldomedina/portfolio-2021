@@ -1,5 +1,77 @@
 export default [
   {
+    name: 'Solids Minisite',
+    gallery: [
+      {
+        type: 'video',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/video/upload/v1649975980/portfolio/solids-minisite_t0ig6d.mp4'
+      },
+      {
+        type: 'video',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/video/upload/v1649976191/portfolio/preview_bxpdno.mp4'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1649976067/portfolio/solids-live.png'
+      }
+    ],
+    type: 'web',
+    roles: ['DESIGNER', 'FRONT_END'],
+    description:
+      'Website for the —decentralised— commercialisation of Solids, a generative architecture project created by FAR',
+    duration: '1.5 months',
+    endClient: 'Fine Digital',
+    workingFor: 'Fine Digital',
+    responsabilities: [
+      'UX/UI Design',
+      'Full Front-end development',
+      'Web3 integration',
+      'Artwork visualiser'
+    ],
+    tags: ['react.js', 'next.js', 'vercel', 'web3.js', 'typescript', 'sass', 'three.js']
+  },
+  {
+    name: 'Fine Digital',
+    gallery: [
+      {
+        type: 'video',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/video/upload/v1649974850/portfolio/fine-home_s1bliu.mp4'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1649974937/portfolio/fine-collection.png'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dhrwv7wvb/image/upload/v1649975054/portfolio/fine-project.png'
+      }
+    ],
+    type: 'web',
+    roles: ['DESIGNER', 'FRONT_END'],
+    responsabilities: [
+      'UX/UI Design',
+      'Full Front-end development',
+      'Web3 integration',
+      'Artwork visualiser',
+      'Headless CMS integration'
+    ],
+    description:
+      'Cross-functional lab website, dedicated to guide artists and creatives in their exploration of working in the metasphere.',
+    duration: '4 months',
+    endClient: 'Fine Digital',
+    workingFor: 'Fine Digital',
+    tags: [
+      'react.js',
+      'next.js',
+      'vercel',
+      'web3.js',
+      'typescript',
+      'sanity.io',
+      'sass',
+      'three.js'
+    ]
+  },
+  {
     name: 'Colombot',
     gallery: [
       {

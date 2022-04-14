@@ -20,14 +20,13 @@ const Aside = ({ activeProject, aboutOpen }) => {
     <SAside h={height}>
       <AboutWrapper aboutOpen={aboutOpen}>
         <SP>
-          Front-end developer with a background in design and more than two years of experience in
-          building high performance websites in React.JS and Vue.JS. I also have a dark past in
-          economics and a more memorable one in the world of constructionist pedagogy and
-          experimental public policies. All of those experiences have as a common thread a permanent
-          interest in creating trough technology.
+          Designer and Front-end developer, currently focusing in web-based 3d graphics and web3
+          development. I also have a dark past in economics and a more memorable one in the world of
+          constructionist pedagogy and experimental public policies. All of those experiences have
+          as a common thread a permanent interest in creating trough technology.
         </SP>
       </AboutWrapper>
-      <Face aboutOpen={aboutOpen} />
+      {!activeProject?.name && <Face />}
       <ProjectGallery activeProject={activeProject} />
     </SAside>
   );

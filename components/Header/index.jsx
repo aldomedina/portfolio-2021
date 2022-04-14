@@ -10,7 +10,7 @@ const Header = ({ setAboutOpen, setActiveProject, aboutOpen, setProjectsOpen }) 
       }}
     >
       <Title>Aldo Medina</Title>
-      <Subtitle>Front-end & Designer</Subtitle>
+      <Subtitle>Designer & Front-end</Subtitle>
     </a>
     <div>
       <AboutButton

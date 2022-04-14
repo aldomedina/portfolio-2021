@@ -11,9 +11,9 @@ export const SAside = styled.aside`
 
 export const SP = styled.p`
   transition: 0.3s ease-in-out;
-  max-width: 500px;
+  max-width: calc(50vw - 4rem);
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: calc(70px + 1rem);
 
   @media ${breakpoints.sm} {
@@ -37,6 +37,7 @@ export const AboutWrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: flex-end;
   overflow-y: auto;
   padding: ${({ theme }) => theme.spacing};
   position: relative;

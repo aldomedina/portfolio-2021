@@ -23,7 +23,7 @@ export default function Face() {
     mouseX = 0,
     mouseY = 0;
   const [isLoaded, setIsLoaded] = useState(false);
-  const { aboutOpen } = useContext(AppContext);
+  const { aboutOpen, activeProject } = useContext(AppContext);
   useEffect(() => {
     sceneSetup();
     addCustomSceneObjects();
@@ -38,7 +38,6 @@ export default function Face() {
   }, []);
 
   const sceneSetup = () => {
-    console.log('init!');
     // get container dimensions and use them for scene sizing
     const width = window.innerWidth > 768 ? window.innerWidth / 2 : window.innerWidth;
     const height = window.innerHeight;
@@ -52,7 +51,7 @@ export default function Face() {
     renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
 
-    effect = new AsciiEffect(renderer, ' .,:;|iI+hHOE#`S', { invert: true });
+    effect = new AsciiEffect(renderer, ' .,:;|iI+hHOE#XS', { invert: true });
     effect.setSize(width, height);
     effect.domElement.style.color = 'white';
     effect.domElement.style.position = 'fixed';
