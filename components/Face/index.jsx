@@ -39,7 +39,8 @@ export default function Face() {
 
   const sceneSetup = () => {
     // get container dimensions and use them for scene sizing
-    const width = window.innerWidth > 768 ? window.innerWidth / 2 : window.innerWidth;
+    // const width = window.innerWidth > 768 ? window.innerWidth / 2 : window.innerWidth;
+    const width = window.innerWidth;
     const height = window.innerHeight;
 
     scene = new THREE.Scene();
@@ -53,7 +54,7 @@ export default function Face() {
 
     effect = new AsciiEffect(renderer, ' .,:;|iI+hHOE#XS', { invert: true });
     effect.setSize(width, height);
-    effect.domElement.style.color = 'white';
+    effect.domElement.style.color = '#FFE4C3';
     effect.domElement.style.position = 'fixed';
     effect.domElement.style.top = '0';
 
@@ -110,8 +111,9 @@ export default function Face() {
   };
 
   const handleWindowResize = () => {
-    const width = window.innerWidth > 768 ? window.innerWidth / 2 : window.innerWidth;
+    // const width = window.innerWidth > 768 ? window.innerWidth / 2 : window.innerWidth;
     const height = window.innerHeight;
+    const width = window.innerWidth;
 
     renderer.setSize(width, height);
     effect.setSize(width, height);
